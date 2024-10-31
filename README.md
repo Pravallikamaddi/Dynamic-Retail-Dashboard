@@ -1,43 +1,34 @@
 # Dynamic Retail Dashboard
 
-This repository contains a **Dynamic Retail Dashboard** that provides key insights into retail data. Built with sample data tables for orders, people, and returns, this dashboard dynamically displays metrics and analyses essential for monitoring sales, profitability, and customer segmentation. It allows users to gain a comprehensive view of retail performance across various dimensions, such as regions, customer segments, and product categories.
+This repository contains a **Dynamic Retail Dashboard** built using three tables: **Orders**, **People**, and **Returns**. The dashboard provides insightful analyses and key performance indicators (KPIs) that facilitate better understanding and decision-making in retail management.
 
 ---
 
 ## Objective
 
-The objective of this project is to create a dynamic retail dashboard that offers real-time insights into key metrics like total sales, profit, quantity sold, and order count, as well as advanced analyses based on customer segments, product categories, and regions. This dashboard serves as a tool for data-driven decision-making, enabling businesses to identify trends, analyze profitability, and optimize sales strategies.
-
-## Significance
-
-This dashboard helps users:
-- **Monitor essential business metrics** such as sales, profit, order count, and profitability.
-- **Gain insights into customer segmentation and product performance** by analyzing data by regions, segments, and product categories.
-- **Identify top and bottom performers** within product categories and customer segments to help improve inventory and marketing strategies.
-- **Make informed business decisions** by using a data-driven approach to understand and optimize sales and profitability across different regions.
+The main objective of this project is to create a dynamic and interactive dashboard that displays critical metrics related to retail performance. The dashboard aims to enable users to:
+- Monitor total sales, profits, and order statistics.
+- Analyze sales trends by category, segment, and region.
+- Make informed business decisions based on data-driven insights.
 
 ---
 
 ## Data Overview
 
-The dashboard uses three main data tables: `Orders`, `People`, and `Returns`.
+The dashboard utilizes three key data tables:
 
 ### 1. Orders Table
-Contains transaction details including customer and product data for each order.
 
-**Sample Columns**:
-- `Order ID`, `Order Date`, `Ship Date`, `Ship Mode`, `Customer ID`, `Customer Name`, `Segment`, `City`, `State`, `Country`, `Product ID`, `Category`, `Sub-Category`, `Sales`, `Quantity`, `Discount`, `Profit`, `Shipping Cost`, `Order Priority`
+The **Orders** table includes transaction details such as customer and product information.
 
 **Sample Data**:
-| Row ID | Order ID       | Order Date | Ship Date | Ship Mode  | Customer ID | Customer Name   | Segment  | City           | State      | Country    | Market | Region   | Product ID        | Category   | Sub-Category | Product Name                                        | Sales   | Quantity | Discount | Profit   | Shipping Cost | Order Priority |
-|--------|----------------|------------|-----------|------------|-------------|-----------------|----------|----------------|------------|------------|--------|----------|-------------------|------------|--------------|----------------------------------------------------|---------|----------|----------|----------|---------------|----------------|
-| 32298  | CA-2012-124891 | 31-07-2020 | 31-07-2020 | Same Day   | RH-19495    | Rick Hansen     | Consumer | New York City  | New York   | United States | US  | East     | TEC-AC-10003033   | Technology | Accessories  | Plantronics CS510 - Wireless Headset               | 2309.65 | 7        | 0        | 762.1845 | 933.57       | Critical       |
+| Row ID | Order ID       | Order Date | Ship Date | Ship Mode  | Customer ID | Customer Name   | Segment  | City           | State      | Country       | Postal Code | Market | Region | Product ID        | Category   | Sub-Category | Product Name                                        | Sales   | Quantity | Discount | Profit   | Shipping Cost | Order Priority |
+|--------|----------------|------------|-----------|------------|-------------|-----------------|----------|----------------|------------|---------------|-------------|--------|--------|-------------------|------------|--------------|----------------------------------------------------|---------|----------|----------|----------|----------------|----------------|
+| 32298  | CA-2012-124891 | 31-07-2020 | 31-07-2020 | Same Day   | RH-19495    | Rick Hansen     | Consumer | New York City  | New York   | United States | 10024       | US     | East   | TEC-AC-10003033   | Technology | Accessories  | Plantronics CS510 - Wireless Headset               | 2309.65 | 7        | 0        | 762.1845 | 933.57        | Critical       |
 
 ### 2. People Table
-Connects people with their respective regions for customer segmentation analysis.
 
-**Sample Columns**:
-- `Person`, `Region`
+The **People** table provides information about customer regions for segmentation analysis.
 
 **Sample Data**:
 | Person           | Region  |
@@ -48,94 +39,93 @@ Connects people with their respective regions for customer segmentation analysis
 | Matt Collister   | West    |
 
 ### 3. Returns Table
-Tracks returns by order ID for return trend analysis.
 
-**Sample Columns**:
-- `Returned`, `Order ID`, `Market`
+The **Returns** table tracks the return status of orders.
 
 **Sample Data**:
 | Returned | Order ID       | Market   |
 |----------|----------------|----------|
 | Yes      | MX-2013-168137 | LATAM    |
 | Yes      | US-2011-165316 | LATAM    |
+| Yes      | ES-2013-1525878| EU       |
+| Yes      | CA-2013-118311 | United States |
 
 ---
 
-## Implemented KPIs and Analyses
+## Solved Problem Questions
 
-### Key Performance Indicators (KPIs)
-1. **Total Sales (💰)**: Total revenue from all sales.
-2. **Total Profit (📈)**: Sum of all profit across transactions.
-3. **Total Quantity (📦)**: Total quantity of products sold.
-4. **Number of Orders (🛒)**: Total count of unique orders.
-5. **Profitability (💹)**: Profit as a percentage of total sales.
-6. **Average Discount (🔍)**: Average discount applied across transactions.
+The following analyses have been conducted to derive insights from the data:
 
-### Analysis Features
-1. **Sales and Profit Analysis**: Graphical representation of sales and profit to assess overall performance.
-2. **Category-wise Profit**: Breakdown of profit by product category.
-3. **Segment-wise Sales Share**: Share of sales for each customer segment.
-4. **Sales by Country**: Distribution of total sales across different countries.
-5. **Top 5 and Bottom 5 Subcategories**: Identification of best and worst-performing subcategories.
-6. **Yearly Sales Trend**: Analysis of year-over-year sales trends.
+1. **KPIs**: Total sales, total profit, quantity, number of orders, and profit margin.
+   ![image](https://github.com/user-attachments/assets/1f74e74a-07ac-42f0-bc03-0d3cd6859118)
+
+2. **Sales and Profit Analysis**: Understanding the relationship between sales and profitability.
+3. **Category-wise Profit**: Analyzing profit contributions from different categories.
+4. **Segment-wise Sales Share**: Evaluating sales distribution across customer segments.
+5. **Sales by Country**: Geographic analysis of sales performance.
+6. **Top 5 Subcategories**: Identifying the highest-selling subcategories.
+7. **Bottom 5 Subcategories**: Recognizing the lowest-performing subcategories.
+8. **Yearly Sales Trend**: Visualizing sales performance over multiple years.
 
 ---
 
-## Next Steps for Expansion
+## Next Steps for Project Development
 
-Planned analyses include:
-1. **Return Analysis**: Examine return rates and trends across markets and customer segments.
-2. **Top and Bottom Customers**: Identify the most and least profitable customers.
-3. **Segment Analysis**: In-depth profitability and sales analysis by customer segment.
-4. **Market Analysis**: Insights into market performance in different regions.
-5. **Product Analysis**: Detailed analysis of product-specific metrics to improve inventory and sales strategies.
+Future enhancements for the dashboard include:
+- **Return Analysis**: Deep dive into return rates and their impacts on sales.
+- **Top Customer Identification**: Discovering the most profitable customers.
+- **Bottom Customer Analysis**: Identifying customers with the least profitability.
+- **Segment Analysis**: Further understanding customer segments and their behavior.
+- **Market Analysis**: Examining sales performance across different markets.
+- **Product Analysis**: Detailed insights on product-level performance.
 
 ---
 
-## Implementation Steps
+## Dynamic KPI Table
 
-### Step 1: Load and Clean Data
-1. Import the `Orders`, `People`, and `Returns` tables into your data analysis tool (Excel, Power BI, or other).
-2. Perform data cleaning:
-   - Handle missing values.
-   - Convert data types (e.g., dates and numbers).
-   - Remove any duplicate records.
-
-### Step 2: Integrate Data
-1. Join the `Orders` and `Returns` tables using `Order ID` to incorporate return data with each order.
-2. Link the `People` table with the `Orders` table based on `Region` to enrich data with region information.
-
-### Step 3: Create KPI Table
-1. Define a KPI table to store essential dynamic metrics, which will be calculated using formulas or calculated fields.
-
-**Sample KPI Table**:
+To ensure the dashboard is dynamic and user-friendly, a KPI table has been created with the following metrics:
 
 | Name           | Metric                | Symbol |
 |----------------|-----------------------|--------|
 | Total Sales    | Sum of Sales          | 💰     |
 | Total Profit   | Sum of Profit         | 📈     |
 | Total Quantity | Sum of Quantity       | 📦     |
-| Number of Orders | Count of Order ID   | 🛒     |
+| No. of Orders  | Count of Order ID     | 🛒     |
 | Profitability  | Sum of Profitability  | 💹     |
-| Average Discount | Average of Discount | 🔍     |
+| Average Discount | Average of Discount  | 🔍     |
+
+---
+
+## Implementation Steps
+
+### Step 1: Load and Clean Data
+- Import the `Orders`, `People`, and `Returns` tables into your analysis tool (Excel, Power BI, etc.).
+- Clean the data by handling missing values and converting data types.
+
+### Step 2: Integrate Data
+- Join the `Orders` and `Returns` tables using `Order ID` to incorporate return data.
+- Link the `People` table to the `Orders` table based on `Region`.
+
+### Step 3: Create the KPI Table
+- Define a KPI table that calculates essential metrics for display on the dashboard.
 
 ### Step 4: Build the Dashboard
-1. **Create KPIs**: Display dynamic values using the KPI table.
-2. **Add Filters and Slicers**: Implement filters for `Category`, `Country`, `Segment`, and `Order Date` for flexible analysis.
-3. **Visualize Data**:
-   - Display total sales, profit, and other KPIs.
-   - Use charts to represent sales, profit trends, and distribution.
-   - Add top and bottom subcategories using bar charts.
-4. **Yearly Trend Analysis**: Add line graphs to display year-over-year sales performance.
+- **Create KPIs**: Display the dynamic values using the KPI table.
+- **Add Filters and Slicers**: Implement filtering options for categories, countries, and segments.
+- **Visualize Data**:
+  - Show total sales and profits.
+  - Use charts for sales trends and category analyses.
+  - Identify top and bottom subcategories using bar graphs.
+  - Add line graphs for yearly sales trends.
 
 ### Step 5: Generate and Interpret Insights
-1. Use the visualizations and KPIs to interpret trends, segment performance, and return trends.
-2. Share findings to inform strategies for improving sales, profit, and customer engagement.
+- Utilize the dashboard to interpret trends and performance metrics.
+- Share insights with stakeholders to inform decision-making.
 
 ---
 
 ## Conclusion
 
-The **Dynamic Retail Dashboard** is a powerful tool for analyzing retail data, providing key insights into KPIs and other metrics across various segments, products, and regions. This dashboard not only allows for effective tracking of retail performance but also provides a strong foundation for further analysis, such as return analysis and customer insights. With these insights, businesses can make informed, data-driven decisions to optimize their operations and strategies.
-
+The **Dynamic Retail Dashboard** serves as an essential tool for analyzing retail performance data. It provides critical insights into sales, profitability, and customer segmentation, enabling data-driven decisions. As the project evolves, additional analyses will further enhance its capabilities, making it an invaluable resource for retail management.
+![image](https://github.com/user-attachments/assets/785de72c-4182-4cc2-8c04-89306903b0a3)
 
