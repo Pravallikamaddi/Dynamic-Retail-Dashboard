@@ -72,12 +72,13 @@ The following analyses have been conducted to derive insights from the data:
      ![image](https://github.com/user-attachments/assets/75bd12fe-dc2a-4234-919f-8de1950c17f5)
 
 6. **Top 5 Subcategories**: Identifying the highest-selling subcategories.
-     ![image](https://github.com/user-attachments/assets/dd0165fa-4357-4179-a360-feb08d24c816)
 
-7. **Bottom 5 Subcategories**: Recognizing the lowest-performing subcategories.
+    ![image](https://github.com/user-attachments/assets/dd0165fa-4357-4179-a360-feb08d24c816)
+
+8. **Bottom 5 Subcategories**: Recognizing the lowest-performing subcategories.
       ![image](https://github.com/user-attachments/assets/a48a4c2b-5ab9-44dd-8870-b5b675d13c2d)
 
-8. **Yearly Sales Trend**: Visualizing sales performance over multiple years.
+9. **Yearly Sales Trend**: Visualizing sales performance over multiple years.
         ![image](https://github.com/user-attachments/assets/d1a41f16-9a8f-45fe-9136-f44de5f2be76)
 
 ---
