@@ -142,7 +142,13 @@ To ensure the dashboard is dynamic and user-friendly, a KPI table has been creat
 
 The **Dynamic Retail Dashboard** serves as an essential tool for analyzing retail performance data. It provides critical insights into sales, profitability, and customer segmentation, enabling data-driven decisions. As the project evolves, additional analyses will further enhance its capabilities, making it an invaluable resource for retail management.
 
+## dashboard_final
 ![image](https://github.com/user-attachments/assets/785de72c-4182-4cc2-8c04-89306903b0a3)
+
+## Walmart Retail Dashboard
+
+![Screenshot 2024-12-26 100346](https://github.com/user-attachments/assets/733f1a51-198b-4980-9580-bc494918e552)
+
 
 
 
